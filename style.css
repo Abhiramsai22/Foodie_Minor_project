@@ -6,18 +6,18 @@
 body{
     background-color: lightgrey;
 }
-
 .main-container{
-    
 }
+
 .header{
     background-color: black;
     height: 130px;
     width:100%;
-    /* position: relative; */
+    position: fixed;
     display: flex;
     justify-content:center;
-    /* position: fixed; */
+    /* position: relative; */
+    z-index: 999;
 }
 
 .foodie{
@@ -78,6 +78,10 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
+    width: 1500px;
+    height: 800px;
+    /* background-color: lightgrey; */
+
 }
 .sectionmenu{
     position: absolute;
@@ -96,6 +100,434 @@ body{
 .item{
     height:330px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
+    width: 200px;
+    height: 200px;
+}
+.circle2>img,.circle1>img,.circle3>img,.circle4>img,.cirle5>img,.cirle6>img{
+    border-radius: 100%;
+}
+
+.name1,.name2,.name3,.name4,.name5,.name6{
     font-size: 1.5rem;
-    padding: 40px;
+}
+
+.item>p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.amount,.amount2,.amount3,.amount4,.amount5,.amount6
+{
+    font-size: 1.2rem;
+    color: darkorange;
+}
+
+.circle2>img:hover,.circle1>img:hover,.circle3>img:hover,.circle4>img:hover,.circle5>img:hover,.circle6>img:hover{
+    transform: scale(1.5) rotate(720deg);
+    transition: 2.2s ease;
+    border-radius: 0%;
+}
+
+.grid-container2{
+    position: absolute;
+    top: 800px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150vh;
+    /* background-color: lightsalmon; */
+}
+
+.featured{
+    /* position: absolute; */
+    margin: 50px;
+    font-size: 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,700px);
+    position:absolute;
+    top:100px;
+
+}
+
+.roll{
+    background-color: white;
+    height: 420px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.roll>img,.pasta>img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pasta{
+    background-color: white;
+    height: 420px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.proll,.proll2,.proll3,.proll4{
+    display: flex;
+    justify-content: center;
+}
+
+.proll,.proll3{
+    font-size: 1.5rem;
+    padding: 7px;
+}
+
+.best-place{
+    position: absolute;
+    top:263vh;
+    font-size:2rem;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+    width: 100%;
+}
+
+.bp{
+    position: absolute;
+    margin: 20px;
+}
+
+.grid-container3{
+    display: grid;
+    top:70px;
+    grid-template-columns:350px 350px 350px;
+    position: absolute;
+    gap: 20px;
+}
+
+.hotel1,.hotel2,.hotel3{
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+}
+
+.photel,.photel2,.photel3,.photol4{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pphotel,.pphote3,.pphotel4{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pphotel2{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.hotel4{
+    position: absolute;
+    top: 500px;
+    background-color: white;
+    height: 250px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-block{
+    position: absolute;
+    top:442vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.customers{
+    font-size: 1.8rem;
+}
+
+.john-doe,.jane-smith{
+    width: 1000px;
+    height: 70px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.para{
+    font-style: italic;
+}
+
+.color{
+    color: darkorange;
+    margin: 5px;
+}
+
+.questions{
+    background-color: rgb(240, 228, 228);
+    width: 100%;
+    height: 200px;
+}
+
+.freq{
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.question{
+    font-size: 1.2rem;
+    color: darkorange;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.para1{
+    padding: 15px;
+    padding-top: 0;
+}
+
+.aboutus{
+    width: 550px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about1{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-details{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact1{
+    font-size: 2rem;
+}
+
+.details{
+    width: 530px;
+    height: 380px;
+    background-color: white;
+}
+
+.input{
+    height: 30px;
+    width: 530px;
+    margin: 15px;
+    margin-left: 0;
+}
+
+.name,.email,.mess{
+    font-size: 1.2rem;
+}
+
+.input:hover,.input1:hover{
+    border: 2px solid;
+}
+
+.input1{
+    width: 530px;
+    height: 90px;
+    margin: 15px;
+    margin-left: 0;
+}
+
+.submit{
+    padding: 8px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 1rem;
+    background-color: orange;
+    border-radius: 8%;
+}
+
+.last{
+    background-color: rgb(35, 33, 33);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-para{
+    color: white;
+}
+
+@media all and (max-width:600px){
+    .header,.section{
+        flex-direction: column;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap:10px;
+        height: 270px;
+    }
+    .foodie{
+        flex-direction: column;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-groundimage{
+        top: 200px;
+    }
+    .main-section{
+        top:200px;
+    }
+    .sectionmenu{
+        left: 250px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1,300px);
+        top:100px;
+        left: 130px;
+        grid-template-areas:
+        'a' 
+        'b'
+        'c'
+        'd'
+        'e'
+        'f';
+    }
+    .item-1{
+        grid-area: a;
+    }
+    .item-2{
+        grid-area: b;
+    }
+    .item-3{
+        grid-area: c;
+    }
+    .item-4{
+        grid-area: d;
+    }
+    .item-5{
+        grid-area: e;
+    }
+    .item-6{
+        grid-area: f;
+    }
+
+
+
+    .grid-container2{
+        top: 2200px;
+        position: relative;
+
+    }
+    .featured{
+        display: flex;
+        position: absolute;
+        left: 120px;
+    }
+    .roll{
+        position: absolute;
+        top: 10px;
+        width: 400px;
+        height: 500px;
+        left: 40px;
+    }
+    .roll>img{
+        width: 380px;
+    }
+
+    .pasta{
+        position: absolute;
+        top: 500px;
+        width: 400px;
+        height: 500px;
+        left: 40px;
+    }
+    .pasta>img{
+        width: 380px;
+    }
+
+    .grid{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        left: 0;
+    }
+
+    .best-place{
+        top: 470vh;
+        width: 600px;
+        height: 1650px;
+        left: 0;
+    }
+
+    .grid-container3{
+        display: grid;
+        grid-template-columns: repeat(1,400px);
+        grid-template-areas: 
+        'x'
+        'y'
+        'u';
+
+    }
+
+    .hotel1{
+        grid-area: x;
+    }
+
+    .hotel2{
+        grid-area: y;
+    }
+
+    .hotel3{
+        grid-area: u;
+    }
+
+    .main-block{
+        top:780vh;
+    }
+
+    .hotel4{
+        top: 1350px;
+
+    }
+
+
 }

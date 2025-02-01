@@ -1,51 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodie Delight Project</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="main-container">
-        <header class="header">
-            <p class="foodie"><b>Foodie Delight</b></p>
-            <div class="section">
-                <div class="home">Home</div>
-                <div class="menu">Menu</div> 
-                <div class="dishes">Featured Dishes</div> 
-                <div class="bestplaces">Best places</div>
-                <div class="testimonials">Testimonials</div>
-                <div class="faq">FAQ</div>
-                <div class="about">About</div>
-                <div class="contact">Contact</div>
-            </div>
-        </header>
-    </div>
+      <header class="header">
+        <p class="foodie"><b>Foodie Delight</b></p>
+        <div class="section">
+          <div class="home"><a href="#zero">Home</a></div>
+          <div class="menu"> <a href="#one">Menu</a></div>
+          <div class="dishes"> <a href="#second">Featured Dishes</a></div>
+          <div class="bestplaces"> <a href="#third">Best places</a></div>
+          <div class="testimonials"><a href="#four">Testimonials</a></div>
+          <div class="faq"><a href="#five">FAQ</a></div>
+          <div class="about"> <a href="#six">About</a></div>
+          <div class="contact"><a href="#seven">Contact</a></div>
+        </div>
+      </header>
+      </div>
     <main>
-        <div class="back-groundimage">
-            <img src="./back-ground image.avif" alt="image" width="100%" height="100%">
-            <div class="welcome"> <strong>Welcome to Foodie Delight!</strong>
+      <div class="back-groundimage" id="zero">
+        <img
+          src="./back-ground image.avif"
+          alt="image"
+          width="100%"
+          height="100%"
+        />
+        <div class="welcome"><strong>Welcome to Foodie Delight!</strong></div>
+        <div class="wel_para">
+          Your Favorite place to order delicious food online.
+        </div>
+        <button class="see">
+          <input type="submit" value="See Our Menu" />
+        </button>
+      </div>
+    </main>
+    <div class="main-section" id="one">
+      <p class="sectionmenu"><strong>Menu</strong></p>
+      <div class="grid-container">
+        <div class="item item-1">
+        <div class="circle1">
+          <img
+            src="./Burger.avif"
+            alt="Burger image"
+            width="200px"
+            height="200px"
+          />
+          </div>
+          <div class="name1">Deluxe Burger</div>
+          <p>Juciy beef patty with Cheese,lettuce,and tomato</p>
+          <div class="amount">
+            <b>$2.99</b>
+          </div>
+        </div>
+        <div class="item item-2">
+          <div class="circle2">
+            <img
+              src="./pizza.avif"
+              alt="Pizza image"
+              width="200px"
+              height="200px"
+            />
             </div>
-            <div class="wel_para">
-                Your Favorite place to order delicious food online.
+            <div class="name2">Cheese Pizza</div>
+            <p>Classic Cheese Pizza with a crispy crust</p>
+            <div class="amount2">
+              <b>$4.99</b>
             </div>
-            <button class="see">
-                <input type="submit" value="See Our Menu">
-            </button>
 
         </div>
-    </main>
-    <div class="main-section">
-        <p class="sectionmenu"> <strong>Menu</strong></p>
-    <div class="grid-container">
-        <div class="item item-1">Deluxe Burger</div>
-        <div class="item item-2">Cheese Pizza</div>
-        <div class="item item-3">Taco Bell</div>
-        <div class="item item-4">KFC</div>
-        <div class="item item-5">French Fries</div>
-        <div class="item item-6">Italian's Pizza</div>
+        <div class="item item-3">
+          <div class="circle3">
+            <img
+              src="./Taco.avif"
+              alt="Taco image"
+              width="200px"
+              height="200px"
+            />
+            </div>
+            <div class="name3">Taco Bell</div>
+            <p>Flovorful,customizable Mexican fast food</p>
+            <div class="amount3">
+              <b>$3.99</b>
+            </div>
+        </div>
+        <div class="item item-4">
+          <div class="circle4">
+            <img
+              src="./KFC.webp"
+              alt="Taco image"
+              width="200px"
+              height="200px"
+            />
+            </div>
+            <div class="name4">KFC</div>
+            <p>Flovorful,customizable KFC Food</p>
+            <div class="amount4">
+              <b>$4.49</b>
+            </div>
+
+        </div>
+        <div class="item item-5">
+          <div class="circle5">
+            <img
+              src="./Fries.jpeg"
+              alt="Fries image"
+              width="200px"
+              height="200px"
+            />
+            </div>
+            <div class="name5">French Fries</div>
+            <p>Little hot and spicy Food.</p>
+            <div class="amount5">
+              <b>$2.49</b>
+            </div>
+        </div>
+        <div class="item item-6">
+          <div class="circle6">
+            <img
+              src="./Pizza2.avif"
+              alt="Pizza image"
+              width="200px"
+              height="200px"
+            />
+            </div>
+            <div class="name6">Italian's Pizza</div>
+            <p>Flovorful,customizable Italian Food</p>
+            <div class="amount6">
+              <b>$2.49</b>
+            </div>
+        </div>
+      </div>
+      <div class="grid-container2" id="second">
+        <p class="featured"><strong>Featured Dishes</strong></p>
+      <div class="grid">
+        <div class="roll"> <img src="./Roll.avif" alt="Roll" width="640" height="350"> <p class="proll">Sushi Roll</p> <p class="proll2">Fresh Sushi Roll with a variety of fillings</p></div>
+        <div class="pasta"> <img src="pasta2.avif" alt="pasta" width="640" height="350"> <p class="proll3">Italian Pasta</p> <p class="proll4">Delicious pasta with a rich tomato sauce.</p></div>
+      </div>
     </div>
+      <div class="best-place" id="third">
+        <p class="bp"></p><strong>Best place</strong>
+        <div class="grid-container3">
+          <div class="hotel1"> <img src="./Hotel1.avif" alt="hotel" width="320" height="300"> <p class="photel">Bhojanambu Kitchen</p> <p class="pphotel">Jubilee Hills,Hyderabad</p></div>
+          <div class="hotel2"> <img src="./hotel2.avif" alt="hotel2" width="320" height="300"> <p class="photel2">Marriott Hotel</p> <p class="pphotel2">Hyderabad Marriott hotel &</p> <p class="pphotel2">Convention centre,Scundrabad</p></div>
+          <div class="hotel3"> <img src="./hotel3.avif" alt="hotel3" width="320" height="300"> <p class="photel3">Mezbaan Authentic</p> <p class="pphote3">S P Road,Secundrabad</p></div>
+        </div>
+        <div class="hotel4"> <img src="./hotel4.avif" alt="hotel4" width="320" height="150"> <p class="photol4">Gudgudee Hotel</p> <p class="pphotel4">Madhapur,Hyderabad</p></div>
+        </div>
+      </div>
+    <div class="main-block" id="four">
+      <p class="customers"><b>What Our Customers say</b></p>
+      <div class="john-doe">
+        <p class="para">"Amazing food and quick delivery! will definitely order again."</p>
+        <p class="color">-John Doe</p>
+      </div>
+      <div class="jane-smith">
+        <p class="para">"The pizza was the best I've ever had.highly recommend!"</p>
+        <p class="color">-Jane Smith</p>
+      </div>
+      <div class="questions" id="five">
+        <p class="freq"><strong>Frequently Asked Questions</strong></p>
+        <p class="question"><b>What is your delivery area?</b></p>
+        <p class="para1">We deliver within a 10-mile radius from our resturant.Check our delivery zone on the contact page </p>
+        <p class="question"><b>Do you offer vegetarian options?</b></p>
+        <p class="para1">Yes,we offer a range of vegetarian dishes.Check our menu for details</p>
+      </div>
+      <div class="aboutus" id="six">
+        <p class="about1"><strong>About Us</strong></p>
+        <p class="para1">At Foodie Delight,We are commited to delivering high-quality and delicious food right to your doorstep.our team of chefs and delivery personnel ensures that you receive the best service possible.</p>
+      </div>
+      <div class="contact-details" id="seven">
+        <p class="contact1">Contact Us</p>
+        <div class="details">
+          <form action="./response.html" target="_blank">
+          <label for="name" class="name">Name:</label> <br>
+          <input type="text" name="name" id="name" required class="input"> <br>
+          <label for="enail" class="email">Email:</label> <br>
+          <input type="text" name="email" id="email" required class="input" pattern="[a-z0-9]+@gmail\.com" title="enter correct format abc12@gmail.com"> <br>
+          <label for="mess" class="mess">Message:</label> <br>
+          <textarea class="input1" name="mess" id="mess" required></textarea>
+          <input type="submit" value="Send Message" class="submit">
+          </form>
+        </div>
+      </div>
+    <div class="last">
+      <p class="last-para">@ 2024 Foodie Delight.All rights reserved.</p>
     </div>
-</body>
+
+    </div>
+
+  </body>
 </html>
